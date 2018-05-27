@@ -44,18 +44,18 @@
                 <div class="panel panel-primary" >
                     <div class="panel-heading" style="background-color: #008c27;">
                         <h3 class="panel-title">
-                            <strong>Current Train Schedule</strong>
+                            <strong>Orari del Treno</strong>
                         </h3>
                     </div>
                     <div class="panel-body">
                         <table class="table table-hover" id='trainTable'>
                             <thead>
                                 <tr>
-                                    <th>Train Name</th>
-                                    <th>Destination</th>
-                                    <th>Frequency (min)</th>
-                                    <th>Next Arrival</th>
-                                    <th>Minutes Away</th>
+                                    <th>Nome del Treno</th>
+                                    <th>Destinazione</th>
+                                    <th>Frequenza (min)</th>
+                                    <th>Il Prossimo Arrivo</th>
+                                    <th>Minuti di Distanza</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -76,19 +76,19 @@
                         <!-- Entry Form -->
                         <form>
                             <div class="form-group">
-                                <label for="">Train Name</label>
+                                <label for="">Nome del Treno</label>
                                 <input type ="text" input class="form-control" id="trainNameInput" type="text">
                             </div>
                             <div class="form-group">
-                                <label for="destination-input">Destination</label>
+                                <label for="destination-input">Destinazione</label>
                                 <input class="form-control" id="destinationInput" type="text">
                             </div>
                             <div class="form-group">
-                                <label for="train-time-input">First Train Time (HH:mm - military time)</label>
+                                <label for="train-time-input">Primo Tempo del Treno (HH:mm)</label>
                                 <input class="form-control" id="firstTrainInput" type="text">
                             </div>
                             <div class="form-group">
-                                <label for="frequency-input">Frequency (min)</label>
+                                <label for="frequency-input">Frequenza (min)</label>
                                 <input class="form-control" id="frequencyInput" type="text">
                             </div>
                             <button class="btn btn-success" id="addTrainBtn" type="submit">Submit</button>
