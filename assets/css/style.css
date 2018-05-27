@@ -1,0 +1,28 @@
+body {
+    background-image: url("../images/italian-countryside.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size:cover;
+    opacity: 0.9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* #trainItalia {
+    text-align: center;
+    margin-left: 10%;
+} */
+
+#title{
+    color: white;
+}
+
+#italia{
+    color:  #e70023;
+    font-size: 200px;
+    font-family: 'Italianno', cursive;
+}
+
+#addTrainBtn{
+    background-color: #008c27;
+}
+

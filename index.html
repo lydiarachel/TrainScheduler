@@ -19,6 +19,8 @@
     <!-- Moment.js Reference -->
     <!-- <script src="http://momentjs.com/downloads/moment.js"></script>   -->
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <!--GoogleFonts-->
+    <link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet">
 </head>
 
 <body>
@@ -26,9 +28,12 @@
     <div class="container">
 
         <!-- Jumbotron -->
-        <div class="jumbotron" style="background-color: black; color: white">
-            <h1 class="text-center">Train Scheduler</h1>
-            <h3 class="text-center"></h3>
+        <div class="jumbotron" style="background-color: #008c27;">
+            <!-- <img id ="trainItalia" src="./assets/images/trainItalia.png"> -->
+            <h1 class="text-center">
+                <span id="title">train</span>
+                <span id="italia">Italia</span>
+            </h1>
         </div>
 
         <div class="row">
@@ -36,14 +41,14 @@
             <div class="col-lg-12">
 
                 <!-- Current Train Schedule-->
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
+                <div class="panel panel-primary" >
+                    <div class="panel-heading" style="background-color: #008c27;">
                         <h3 class="panel-title">
                             <strong>Current Train Schedule</strong>
                         </h3>
                     </div>
                     <div class="panel-body">
-                        <table class="table table-hover" id='train-table'>
+                        <table class="table table-hover" id='trainTable'>
                             <thead>
                                 <tr>
                                     <th>Train Name</th>
@@ -61,7 +66,7 @@
 
                 <!-- Add Train   -->
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
+                    <div class="panel-heading" style="background-color: #008c27;">
                         <h3 class="panel-title">
                             <strong>Add Train</strong>
                         </h3>
@@ -71,22 +76,22 @@
                         <!-- Entry Form -->
                         <form>
                             <div class="form-group">
-                                <label for="train-name-input">Train Name</label>
-                                <input class="form-control" id="train-name-input" type="text">
+                                <label for="">Train Name</label>
+                                <input type ="text" input class="form-control" id="trainNameInput" type="text">
                             </div>
                             <div class="form-group">
                                 <label for="destination-input">Destination</label>
-                                <input class="form-control" id="destination-input" type="text">
+                                <input class="form-control" id="destinationInput" type="text">
                             </div>
                             <div class="form-group">
                                 <label for="train-time-input">First Train Time (HH:mm - military time)</label>
-                                <input class="form-control" id="train-time-input" type="text">
+                                <input class="form-control" id="firstTrainInput" type="text">
                             </div>
                             <div class="form-group">
                                 <label for="frequency-input">Frequency (min)</label>
-                                <input class="form-control" id="frequency-input" type="text">
+                                <input class="form-control" id="frequencyInput" type="text">
                             </div>
-                            <button class="btn btn-primary" id="add-train-btn" type="submit">Submit</button>
+                            <button class="btn btn-success" id="addTrainBtn" type="submit">Submit</button>
                         </form>
 
                     </div>
